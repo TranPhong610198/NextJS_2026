@@ -13,10 +13,10 @@ Repository này lưu trữ toàn bộ source code, tài liệu và ghi chú cá 
 Dưới đây là danh sách các module và chương học tôi sẽ đi qua:
 
 ### Phần 1: Kiến thức nền tảng
-- [ ] **Chapter 0:** Giới thiệu
-- [ ] **Chapter 1:** Setup Environment
-- [ ] **Chapter 2:** Ôn tập Javascript
-- [ ] **Chapter 3:** React Basic
+- [x] **Chapter 0:** Giới thiệu
+- [x] **Chapter 1:** Setup Environment
+- [x] **Chapter 2:** Ôn tập Javascript
+- [x] **Chapter 3:** React Basic
 - [ ] **Chapter 4:** React Hook
 - [ ] **Chapter 5:** Setup Dự Án Backend
 - [ ] **Chapter 6:** Routing với React (Client Side)
