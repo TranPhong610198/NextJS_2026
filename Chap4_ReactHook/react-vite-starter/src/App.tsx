@@ -1,15 +1,11 @@
+import { useState } from "react";
 import InputTodo from "./todo/input.todo"
 
 function App() {
 
-  const name = "TheMoriarty";
-  const age = 25;
-  const info = {
-    gender: "male",
-    address: "Ha Noi"
-  };
-
-  const todos = ["todo 1", "todo 2", "todo 3", "todo 4", "todo 5", "todo 6"]
+  const [listTodo, setListTodo] = useState(
+    ["Typed todo"]
+  )
 
   return (
     <div>
@@ -17,18 +13,18 @@ function App() {
         <div className="child"></div>
       </div>
       <InputTodo
-        name={name}
-        age={age}
-        info={info}
+        listTodo={listTodo}
+        setListTodo={setListTodo}
       />
 
       <ul>
-        {todos.map((item, index) => {
+        {listTodo.map((item, index) => {
           return (
             <li key={index}>{item}</li>
           )
         })}
       </ul>
+
     </div>
   )
 }

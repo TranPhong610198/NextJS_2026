@@ -1,37 +1,39 @@
-interface IProps {
-    name: string;
-    age: number;
-    info: {
-        gender: string,
-        address: string
-    }
+import { useState } from "react";
 
-    optional?: string; // optional có thể có hoặc không
+interface IProps {
+    listTodo: string[]
+    setListTodo: (x: string[]) => void
 }
 
 const InputTodo = (props: IProps) => {
-    const { age, name, info } = props; // viết theo kiểu object Destructuring
+
+    const { listTodo, setListTodo } = props;
+    const [todo, setTodo] = useState("");
 
     const handleClick = () => {
-        alert("click me")
+        if (!todo) {
+            alert("empty todo!!!")
+            return
+        }
+        setListTodo([...listTodo, todo]); //spread syntax
+        setTodo("");
     }
 
+    console.log(">>> check ");
+
     return (
-        <div>
+        <div style={{ border: "1px solid red" }}>
             <label htmlFor="input">Add new todo</label><br />
             <input
+                value={todo}
                 type="text"
                 onChange={(event) => {
-                    console.log(event.target.value)
+                    setTodo(event.target.value)
                 }}
             />
             &nbsp; &nbsp;
             <button onClick={() => handleClick()}>save</button>
-
-            <div>Age = {age}</div>
-            <div>Name = {name}</div>
-            <div>Info = {(info.gender ? "Nam" : "Nữ") + " and live in: " + props.info.address}</div>
-        </div>
+        </div >
     )
 }
 
