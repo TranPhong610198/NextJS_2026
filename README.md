@@ -17,8 +17,8 @@ Dưới đây là danh sách các module và chương học tôi sẽ đi qua:
 - [x] **Chapter 1:** Setup Environment
 - [x] **Chapter 2:** Ôn tập Javascript
 - [x] **Chapter 3:** React Basic
-- [ ] **Chapter 4:** React Hook
-- [ ] **Chapter 5:** Setup Dự Án Backend
+- [x] **Chapter 4:** React Hook
+- [x] **Chapter 5:** Setup Dự Án Backend
 - [ ] **Chapter 6:** Routing với React (Client Side)
 - [ ] **Chapter 7:** Hướng dẫn sử dụng Chrome Dev Tool (Bổ Trợ)
 - [ ] **Chapter 8:** Module Users
